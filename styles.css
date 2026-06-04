@@ -1,11 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
-
-/* This is hero section */
+/* This is section*/
 
 
 .hero-section-container{
@@ -13,8 +18,8 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 10px 100px 60px 100px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    padding: 20px 100px 100px 100px;
+    flex: 1;
 }
 
 .nav-bar{
@@ -32,7 +37,7 @@ ul{
 li a{
     text-decoration: none;
     color: white;
-    font-family: Arial;
+    font-size: 18px;
     
     
 }
@@ -44,8 +49,7 @@ li a{
 }
 
 .hero-section{
-    display: flex;
-    
+    display: flex;  
     justify-content: space-between;
     gap: 20px;
 }
@@ -54,36 +58,26 @@ li a{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex: 1;
-    /* width: 500px;
-    height: 200px; */
-
-    
+    flex: 1;   
 }
 
+
 .hero-image{
-    /* width: 500px;
-    height: 200px; */
     flex:1;
     background-color: gray;
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-
-    
+    align-items: center; 
 }
 
 .hero-header{
-    font-size: 32px;
-    font-weight:700;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight:900;
 }
 
 .hero-info{
-    line-height: 1.5;
-    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 
@@ -96,17 +90,123 @@ button{
     border: none;
     border-radius: 8px;
     font-weight: 600;
+
 }
 
 
-.main-box-container{
+
+/* This is section two */
+
+
+
+.card-wrapper{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    padding: 0 0 50px 0;
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.card{
+    width: 130px;
+    height: 130px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+span{
+    font-size: 15px;
+}
+
+   
+
+h2{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 36px;
+    color:#1F2937;
 }
 
 
 
+/* This is for section three */
+
+.section-three-container{
+    display: flex;
+     background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+   
+}
+
+.section-three{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    gap: 10px;
+    /* border: 2px solid black; */
+}
+
+.section-three p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+   
+}
+
+.section-three span{
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 16px;
+    color:#1F2937;
+    
+}
 
 
+/* This is section four */
+
+.cta-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.cta-container{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 40px 60px;
+    border-radius: 8px;
+    
+}
+
+.cta-container .cta-btn{
+        border: 2px solid white;
+        padding: 5px 20px;
+      
+}
+
+
+footer p{
+    background-color: #1F2937;
+    text-align: center;
+    color: #E5E7EB;
+    padding: 25px 0;
+}
